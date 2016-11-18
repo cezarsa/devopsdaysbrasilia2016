@@ -14,15 +14,17 @@ https://github.com/cezarsa/devopsdaysbrasilia2016
 
 .html style.html
 
-- Desenvolvedor na Globo.com;
-- Entusiasta e contribuidor open source;
-- Membro da equipe do tsuru por 2+ anos.
+- Desenvolvedor na Globo.com a 5 anos;
+- Membro da equipe do tsuru a 2+ anos;
+- Morador de Brasília a ~1 ano;
+- Entusiasta e contribuidor open source.
 
 * Desafios
 
 - Diminuir time to market das aplicações;
 - Deploy mais seguro e reproduzível;
-- Mais autonomia para as equipes (mais inovação).
+- Mais autonomia para as equipes (mais inovação);
+- Acabar com "Devs vs Ops".
 
 * Agile
 
@@ -46,6 +48,7 @@ Fluxo de desenvolvimento ágil requer infraestrutura ágil.
 
 * Plataformas
 
+- [[https://12factor.net/]]
 - Fluxo comum para cada linguagem/framework
 - go, java, ruby, python, lua, php, elixir, nodejs, ...
 - + hooks
@@ -53,6 +56,10 @@ Fluxo de desenvolvimento ágil requer infraestrutura ágil.
 * Funcionou?
 
 .image deploysmes.png
+
+* ...
+
+.image deploysdiaapp.png
 
 * Acho que sim
 
@@ -65,13 +72,8 @@ Fluxo de desenvolvimento ágil requer infraestrutura ágil.
 
 * maquinas recriadas / mês
 
-.image nodehealingmes.png
-
-* Grande pico de junho
-
-- kernel OOM freeze bug
-.link https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1510196
-.link https://community.nitrous.io/posts/stability-and-a-linux-oom-killer-bug
+.image nodehealingmes.png 500 _
+.caption * Junho 2016: [[https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1510196]] 
 
 * containers recriados / mês
 
@@ -85,6 +87,19 @@ Fluxo de desenvolvimento ágil requer infraestrutura ágil.
 
 - Um time desenvolve o projeto open source tsuru;
 - E também mantem a instalação do tsuru na Globo.com
+
+* Serviços
+
+- DBaaS [[http://github.com/globocom/database-as-a-service]]
+Criação e provisionemento de maquinas para databases dinamicamente
+
+- RPaaS [[https://github.com/tsuru/rpaas]]
+Criação de reverse proxy HTTP com cache
+
+- NetworkAPI [[https://github.com/globocom/GloboNetworkAPI]]
+Manipulação de recursos de rede (IPAM, LBs, etc)
+
+- GloboDNS [[https://github.com/globocom/GloboDNS]]
 
 * Escala?
 
@@ -120,15 +135,20 @@ Fluxo de desenvolvimento ágil requer infraestrutura ágil.
 - go-mgo/mgo
 - ...
 
-* Funcionalidades
+* Funcionalidades adicionais
 
+- Autoscale maquinas e containers;
 - Autenticação plugável: oauth2, saml, interna;
 - Autorização granular;
 - Routers plugáveis: planb, vulcand, galeb, fusis, hipache;
 - Logs das aplicações;
 - Log de eventos;
 - Métricas;
-- Múltiplos provedores de IaaS: AWS, Digital Ocean, CloudStack. 
+- Múltiplos provedores de IaaS: AWS, Digital Ocean, CloudStack.
+
+* Quem usa?
+
+.image quem.png _ 950 
 
 * Futuro
 
